@@ -8,6 +8,7 @@
  * Author: Alan Herculano Diniz
  * Author URI: http://www.alanhdiniz.com
  * License: MIT
+ * License URI: https://github.com/AHDiniz/Tour-Route-Plugin/blob/master/LICENSE
  */
 
 ?>
