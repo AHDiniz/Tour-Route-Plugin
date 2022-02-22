@@ -1,5 +1,7 @@
 <?php
 
+include '../data_persistance/post_type_management.php';
+
 namespace TourRoute
 {
     class Activity
@@ -10,6 +12,7 @@ namespace TourRoute
         private $address_link = ""; // Link to the map that shows the location of the activity
         private $tags = array();
         private $media_links = array();
+        private $user_id = 0;
 
         /**
          * Creates the activity type in WordPress.
@@ -68,6 +71,19 @@ namespace TourRoute
         {
             array_push($tags, $tag);
         }
+    }
+
+    class Event extends Activity
+    {
+        private $prices;
+        private $datetimes;
+
+        public static function CreateActivityPostType()
+        {
+            create_event_type();
+        }
+
+        
     }
 }
 ?>
