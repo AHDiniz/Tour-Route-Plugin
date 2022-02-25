@@ -2,56 +2,21 @@
 
 namespace TourRoute
 {
-    function create_single_event($author_id, $content, $title, $status)
+    class PostManager
     {
-        $postargs = array(
-            'post_author' => $author_id,
-            'post_content' => $content,
-            'post_title' => $title,
-            'post_status' => $status,
-            'post_type' => 'event'
-        );
-
-        wp_insert_post($postargs);
-    }
-
-    function create_single_tour_point($author_id, $content, $title, $status)
-    {
-        $postargs = array(
-            'post_author' => $author_id,
-            'post_content' => $content,
-            'post_title' => $title,
-            'post_status' => $status,
-            'post_type' => 'tour_point'
-        );
-
-        wp_insert_post($postargs);
-    }
-
-    function create_single_tour_experience($author_id, $content, $title, $status)
-    {
-        $postargs = array(
-            'post_author' => $author_id,
-            'post_content' => $content,
-            'post_title' => $title,
-            'post_status' => $status,
-            'post_type' => 'tour_experience'
-        );
-
-        wp_insert_post($postargs);
-    }
-
-    function create_single_group_activity($author_id, $content, $title, $status)
-    {
-        $postargs = array(
-            'post_author' => $author_id,
-            'post_content' => $content,
-            'post_title' => $title,
-            'post_status' => $status,
-            'post_type' => 'group_activity'
-        );
-
-        wp_insert_post($postargs);
+        /**
+         * Creates the event page.
+         * 
+         * After given the event name, the event slug and the event content in HTML, these data are passed to WordPress so it can create the event's page.
+         * 
+         * @param string $name
+         * @param string $slug
+         * @param string $content: the page content in formated HTML
+         */
+        public function InsertEvent($name, $slug, $content)
+        {
+            
+        }
     }
 }
 
