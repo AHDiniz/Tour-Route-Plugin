@@ -71,6 +71,23 @@ namespace TourRoute
                 )
             );
         }
+
+        public function CreateTourRouteType()
+        {
+            register_post_type('tour_route', 
+                array(
+                    'labels' => array(
+                        'name' => __("Tour Routes"),
+                        'singular_name' => __("Tour Route")
+                    ),
+                    'public' => true,
+                    'has_archive' => true,
+                    'rewrite' => array('slug' => 'tour_route'),
+                    'show_in_rest' => true,
+                    'menu_icon' => 'dashicons-location-alt'
+                ),
+            );
+        }
     }
 }
 
