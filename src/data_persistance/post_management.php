@@ -55,7 +55,7 @@ namespace TourRoute
          */
         public static function DeletePost($id)
         {
-
+            wp_delete_post($id, true);
         }
     }
 }
