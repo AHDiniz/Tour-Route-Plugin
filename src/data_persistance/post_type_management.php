@@ -16,7 +16,8 @@ namespace TourRoute
                     'has_archive' => true,
                     'rewrite' => array('slug' => 'event'),
                     'show_in_rest' => true,
-                    'menu_icon' => 'dashicons-tickets-alt'
+                    'menu_icon' => 'dashicons-tickets-alt',
+                    'supports' => array('title', 'editor', 'revisions', 'author', 'excerpt', 'page-attributes', 'thumbnail', 'custom-fields', 'post-formats')
                 )
             );
         }
@@ -33,7 +34,8 @@ namespace TourRoute
                     'has_archive' => true,
                     'rewrite' => array('slug' => 'tour_point'),
                     'show_in_rest' => true,
-                    'menu_icon' => 'dashicons-location'
+                    'menu_icon' => 'dashicons-location',
+                    'supports' => array('title', 'editor', 'revisions', 'author', 'excerpt', 'page-attributes', 'thumbnail', 'custom-fields', 'post-formats')
                 )
             );
         }
@@ -50,7 +52,8 @@ namespace TourRoute
                     'has_archive' => true,
                     'rewrite' => array('slug' => 'tour_experience'),
                     'show_in_rest' => true,
-                    'menu_icon' => 'dashicons-palmtree'
+                    'menu_icon' => 'dashicons-palmtree',
+                    'supports' => array('title', 'editor', 'revisions', 'author', 'excerpt', 'page-attributes', 'thumbnail', 'custom-fields', 'post-formats')
                 )
             );
         }
@@ -67,7 +70,8 @@ namespace TourRoute
                     'has_archive' => true,
                     'rewrite' => array('slug' => 'group_activity'),
                     'show_in_rest' => true,
-                    'menu_icon' => 'dashicons-groups'
+                    'menu_icon' => 'dashicons-groups',
+                    'supports' => array('title', 'editor', 'revisions', 'author', 'excerpt', 'page-attributes', 'thumbnail', 'custom-fields', 'post-formats')
                 )
             );
         }
@@ -84,7 +88,8 @@ namespace TourRoute
                     'has_archive' => true,
                     'rewrite' => array('slug' => 'tour_route'),
                     'show_in_rest' => true,
-                    'menu_icon' => 'dashicons-location-alt'
+                    'menu_icon' => 'dashicons-location-alt',
+                    'supports' => array('title', 'editor', 'revisions', 'author', 'excerpt', 'page-attributes', 'thumbnail', 'custom-fields', 'post-formats')
                 ),
             );
         }
