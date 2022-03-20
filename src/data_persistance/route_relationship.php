@@ -41,8 +41,8 @@ namespace TourRoute
             global $wpdb;
             $query = "
                 DELETE FROM {$wpdb->prefix}RouteActivityRelation WHERE
-                route_id={$route_id} AND
-                activity_id={$activity_id};
+                {$wpdb->prefix}RouteActivityRelation.route_id={$route_id} AND
+                {$wpdb->prefix}RouteActivityRelation.activity_id={$activity_id};
             ";
             return $wpdb->get_results($query, OBJECT);
         }
@@ -52,7 +52,7 @@ namespace TourRoute
             global $wpdb;
             $query = "
                 SELECT * FROM {$wpdb->prefix}RouteActivityRelation WHERE
-                route_id={$route_id};
+                {$wpdb->prefix}RouteActivityRelation.route_id={$route_id};
             ";
             return $wpdb->get_results($query, OBJECT);
         }
@@ -62,7 +62,7 @@ namespace TourRoute
             global $wpdb;
             $query = "
                 SELECT * FROM {$wpdb->prefix}RouteActivityRelation WHERE
-                activity_id={$activity_id};
+                {$wpdb->prefix}RouteActivityRelation.activity_id={$activity_id};
             ";
             return $wpdb->get_results($query, OBJECT);
         }
